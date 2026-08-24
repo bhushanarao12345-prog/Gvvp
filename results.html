@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Results — Gvvp</title>
 <link rel="stylesheet" href="style.css">
+<style>
+.results-page{min-height:calc(100vh - 56px);padding:28px 20px 20px;display:flex;flex-direction:column;align-items:center}
+.results-title{font-size:42px;line-height:1;letter-spacing:-.04em;margin:0 0 22px;font-weight:700}
+.results-page .result-list{width:min(700px,100%);border-top:1px solid #e5e5e7}
+.results-page .result-list a{padding:10px 4px;font-size:17px;line-height:1.25}
+.results-page .result-list span{font-size:23px}
+.results-page footer{margin-top:auto}
+@media(max-width:700px){.results-page{padding:24px 16px 12px}.results-title{font-size:36px;margin-bottom:16px}.results-page .result-list a{padding:8px 2px;font-size:16px}.results-page .result-list span{font-size:21px}}
+</style>
 </head>
 <body>
 <header class="nav">
@@ -13,7 +22,7 @@
 </header>
 <main class="results-page">
   <h1 class="results-title">Results</h1>
-  <div class="result-list compact-list">
+  <div class="result-list">
     <a href="#">1st Semester <span>›</span></a>
     <a href="#">2nd Semester <span>›</span></a>
     <a href="#">3rd Semester <span>›</span></a>
